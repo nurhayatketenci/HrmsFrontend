@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, Input, Container, Dropdown, Menu, MenuItem } from 'semantic-ui-react'
-import '../css/navi.css'
 export default function Navi() {
     return (
         <div>

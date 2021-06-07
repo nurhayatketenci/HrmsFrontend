@@ -1,7 +1,6 @@
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import React, { useState, useEffect } from "react";
 import JobAdvertisementService from '../services/jobAdvertisementService';
-import '../css/Dashboard.css'
 
 
 export default function JobAdvertisementList() {
