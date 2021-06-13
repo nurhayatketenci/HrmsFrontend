@@ -1,0 +1,17 @@
+.line{
+    border-style: solid;
+    border-width: 1px;
+    color:black ;
+    padding :40px;
+    width: 100%;
+    border-radius: 5%;
+}
+.check{
+    margin-top: 30px;
+    margin-right: 500px;
+    margin-left: 50px;
+
+}
+.datepicker{
+margin-top:30px;
+}

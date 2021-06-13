@@ -1,10 +1,8 @@
 import { Icon, Dropdown, Menu, Table } from 'semantic-ui-react'
 import React, { useState, useEffect } from "react";
 import CityService from '../services/cityService';
-import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 export default function CityList() {
@@ -17,23 +15,21 @@ export default function CityList() {
 
     return (
         <div>
-            {/* <FormControl className="city" >
+            <FormControl className="city" >
 
                 <InputLabel id="demo-simple-select-label">ŞEHİRLER</InputLabel>
-                <Select className="citySelect"
+                <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
-
-                >
-                    {
+                >{
                         citys.map(city => (
                             <MenuItem key={city.id}>{city.name}</MenuItem>
                         ))
 
                     }
                 </Select>
-            </FormControl> */}
-            <Table celled>
+            </FormControl>
+            {/* <Table celled>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell> Name</Table.HeaderCell>
@@ -53,7 +49,7 @@ export default function CityList() {
                 </Table.Body>
 
 
-            </Table>
+            </Table> */}
         </div>
     )
 }

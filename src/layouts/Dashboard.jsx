@@ -1,28 +1,24 @@
 import React from 'react'
 import { Grid, GridColumn, GridRow } from 'semantic-ui-react'
-import CityList from '../pages/CityList'
 import JobAdvertisementList from '../pages/JobAdvertisementList'
-import JobPositionList from '../pages/JobPositionList'
-import CandidateList from '../pages/CandidateList'
+import JobAdvertisementAdd from '../pages/JobAdvertisementAdd'
+import JobAdvertisementConfirmation from '../pages/JobAdvertisementConfirmation'
 
+
+import { Route } from "react-router";
 export default function Dashboard() {
     return (
         <div>
             <Grid>
-                <GridRow >
-                    <GridColumn width={6}>
-                        <CandidateList />
+                <GridRow className="main">
+                    <GridColumn width={4}>
+                        <Route exact path="/" component={JobAdvertisementList} />
                     </GridColumn>
-                    <GridColumn width={6}>
-                        <CityList />
+                    <GridColumn width={11}>
+                        <Route exact path="/jobAdd" component={JobAdvertisementAdd} />
                     </GridColumn>
-                </GridRow>
-                <GridRow>
-                    <GridColumn width={6}>
-                        <JobAdvertisementList />
-                    </GridColumn>
-                    <GridColumn width={6}>
-                        <JobPositionList />
+                    <GridColumn width={11}>
+                        <Route exact path="/jobList" component={JobAdvertisementConfirmation} />
                     </GridColumn>
                 </GridRow>
             </Grid>

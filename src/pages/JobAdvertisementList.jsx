@@ -1,18 +1,22 @@
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import React, { useState, useEffect } from "react";
 import JobAdvertisementService from '../services/jobAdvertisementService';
-
+import { useHistory } from "react-router";
 
 export default function JobAdvertisementList() {
     const [jobadvertisements, setJobAdvertisement] = useState([])
+    const history = useHistory()
     useEffect(() => {
         let jobAdvertisementService = new JobAdvertisementService()
         jobAdvertisementService.getJobAdvertisement().then(result => setJobAdvertisement(result.data.data))
     })
+    function jobAdd() {
+        history.push("/jobAdd")
+    }
     return (
         <div>
 
-          <Table celled className='dashboard'>
+            <Table celled className='dashboard' color="blue">
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>Job Advertisement</Table.HeaderCell>
@@ -38,6 +42,8 @@ export default function JobAdvertisementList() {
                     }
                 </Table.Body>
             </Table>
+            <button onClick={jobAdd} class="ui positive button">
+                add job sign</button>
         </div>
     )
 }
