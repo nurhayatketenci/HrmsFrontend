@@ -21,15 +21,15 @@ export default function Navi() {
                     <Menu.Menu position='right'>
                         <Menu.Item className="menuItem">
                             <Icon className="navi-icon" size="big" name="home" />
-                            <span>Ana Sayfa</span>
+                            <span>Home</span>
                             <Icon className="navi-icon" size="big" name=" users" />
-                            <span>Ağım</span>
+                            <span>My Network</span>
                             <Icon className="navi-icon" size="big" name=" envelope" />
-                            <span>Mesajlasma</span>
+                            <span>Jobs</span>
                             <Icon className="navi-icon" size="big" name=" bell" />
-                            <span>Bildirimler</span>
+                            <span>Messaging</span>
                             <Icon className="navi-icon" size="big" name="user circle outline" />
-                            <span>Ben</span>
+                            <span>Me</span>
 
                         </Menu.Item>
                         {/* <Menu.Item>
