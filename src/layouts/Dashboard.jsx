@@ -11,14 +11,14 @@ export default function Dashboard() {
         <div>
             <Grid>
                 <GridRow className="main">
-                    <GridColumn width={4}>
-                        <Route exact path="/" component={JobAdvertisementList} />
+                    <GridColumn width={16}>
+                        <Route exact path="/jobConfirmList" component={JobAdvertisementConfirmation} />
                     </GridColumn>
                     <GridColumn width={11}>
                         <Route exact path="/jobAdd" component={JobAdvertisementAdd} />
                     </GridColumn>
-                    <GridColumn width={11}>
-                        <Route exact path="/jobList" component={JobAdvertisementConfirmation} />
+                    <GridColumn width={16}>
+                        <Route exact path="/" component={JobAdvertisementList} />
                     </GridColumn>
                 </GridRow>
             </Grid>

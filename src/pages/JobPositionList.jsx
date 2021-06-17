@@ -6,7 +6,7 @@ export default function JobPositionList() {
     useEffect(() => {
         let jobPositionService = new JobPositionService();
         jobPositionService.getJobPosition().then(result => setJobPosition(result.data.data))
-    })
+    }, [])
     return (
         <div>
             <Table celled>

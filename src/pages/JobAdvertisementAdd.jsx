@@ -1,5 +1,4 @@
 import { Form, Button, ButtonGroup, Checkbox, Label, Input, TextArea } from 'semantic-ui-react'
-import CityList from './CityList'
 import { Dropdown } from 'semantic-ui-react'
 import React, { useState, useEffect } from "react";
 import CityService from '../services/cityService';
